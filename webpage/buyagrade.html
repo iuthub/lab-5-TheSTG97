@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- U1610241 -->
+<!DOCTYPE 
+	html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Buy Your Way to a Better Education!</title>
@@ -15,25 +17,35 @@
 		<hr />
 		
 		<h2>Give Us Your Money</h2>
+		<form action="sucker.php" method="POST">
 		<dl>
 			<dt>Name</dt>
 			<dd>
-				???
+				<input type="text" name="name" />
 			</dd>
 			
 			<dt>Section</dt>
 			<dd>
-				???
+				<select name="department" title="Select a department">
+					<option value="SOCIE">SOCIE</option>
+					<option value="SOL">SOL</option>
+				</select>
 			</dd>
 			
 			<dt>Credit Card</dt>
 			<dd>
-				???
+				<input type="text" name="credit_card" />
+
+			</dd>
+			<dd>	
+				<input type="radio" name="card_type" value="visa" checked="true">Visa
+				<input type="radio" name="card_type" value="Master Card">Master Card	
 			</dd>
 		</dl>
 		
 		<div>
-			I am a giant sucker.
+			<input type="submit" value="I am a giant sucker">
 		</div>
+		</form>
 	</body>
 </html>
